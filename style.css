@@ -1,0 +1,142 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.background {
+  background-color: whitesmoke;
+  min-height: 100dvh;
+  min-width: 100dvw;
+  margin: 0;
+}
+.titleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: clamp(55dvw, 57dvw, 59dvw);
+  position: absolute;
+  top: 25%;
+  left: 22%;
+}
+.titles {
+  font: 600 2vmax "Roboto";
+}
+.clock {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(17, 17, 17);
+  border-radius: 20px;
+  height: 40vh;
+}
+.hour,
+.minute,
+.second {
+  min-width: 20dvw;
+  min-height: 30dvh;
+  margin: 30px 30px;
+}
+.hour,
+.minute,
+.second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.tenHour,
+.oneHour,
+.tenMinute,
+.oneMinute,
+.tenSecond,
+.oneSecond {
+  margin: 2vh 0.5vw;
+  padding-left: 8px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+  min-width: 7dvw;
+}
+.clips {
+  position: relative;
+  background-color: red;
+  width: 60px;
+  height: 10px;
+  margin: 5px 5px;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+}
+#clip00,
+#clip10,
+#clip20,
+#clip30,
+#clip40,
+#clip50 {
+  top: 7%;
+  left: 15%;
+}
+#clip01,
+#clip11,
+#clip21,
+#clip31,
+#clip41,
+#clip51 {
+  top: 19%;
+  left: -10%;
+  rotate: 90deg;
+}
+#clip02,
+#clip12,
+#clip22,
+#clip32,
+#clip42,
+#clip52 {
+  top: 11%;
+  right: -41%;
+  rotate: 90deg;
+}
+#clip03,
+#clip13,
+#clip23,
+#clip33,
+#clip43,
+#clip53 {
+  top: 23%;
+  left: 15%;
+}
+#clip04,
+#clip14,
+#clip24,
+#clip34,
+#clip44,
+#clip54 {
+  top: 36%;
+  left: -10%;
+  rotate: 90deg;
+}
+#clip05,
+#clip15,
+#clip25,
+#clip35,
+#clip45,
+#clip55 {
+  top: 27%;
+  right: -41%;
+  rotate: 90deg;
+}
+#clip06,
+#clip16,
+#clip26,
+#clip36,
+#clip46,
+#clip56 {
+  top: 39%;
+  left: 15%;
+}
+.active {
+  background-color: red;
+}
+.passive {
+  background-color: rgba(165, 42, 42, 0.24);
+}
